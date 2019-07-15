@@ -11,7 +11,8 @@ class WorkingStudent(Student):
     def __init__(self, name, school, salary):
         super().__init__(name, school)
         self.salary = salary
-    
+        
+    @property
     def weekly_salary(self):
         return self.salary * 37.5
 
@@ -20,4 +21,5 @@ print(rolf.salary)
 rolf.marks.append(57)
 rolf.marks.append(99)
 print(rolf.average())
-print(rolf.weekly_salary())
+
+print(rolf.weekly_salary)
