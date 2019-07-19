@@ -1,4 +1,5 @@
-from .common.file_operations import save_to_file
+#from .common.file_operations import save_to_file
+#import utils.common.file_operations
 
 def find_id(iterable, finder, excepted):
     for i in iterable:
@@ -9,4 +10,5 @@ def find_id(iterable, finder, excepted):
 class NotFoundError(Exception):
     pass
 
-print(__name__)
+if __name__ == '__main__':
+    print(find_id(['Rolf', 'Jose', 'Jen'], lambda x: x, 'Jose'))
