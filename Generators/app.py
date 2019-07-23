@@ -2,7 +2,7 @@ class FirstHundredGenerator:
     def __init__(self):
         self.number = 0
     
-    def __next__(self): #next(my_object)
+    def __next__(self): #next(my_object), mean this function is a generator
         if self.number < 100:
             current = self.number
             self.number += 1
