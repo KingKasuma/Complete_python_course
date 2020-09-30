@@ -23,5 +23,5 @@ student_two = Student('Jose', [50,60,99,100])
 
 print(student_one.name)
 student_one.example()
-Student.example()
+#Student.example()
 print(student_two.name)
